@@ -1,0 +1,63 @@
+:root {
+  --vt-c-white: #ffffff;
+  --vt-c-black: #0f172a;
+  --vt-c-ink: #12203a;
+  --vt-c-surface: rgba(255, 255, 255, 0.88);
+  --vt-c-surface-strong: rgba(255, 255, 255, 0.96);
+  --vt-c-divider: rgba(18, 28, 44, 0.12);
+  --vt-c-divider-strong: rgba(18, 28, 44, 0.18);
+  --vt-c-muted: rgba(18, 28, 44, 0.68);
+  --vt-c-accent: #5a72ff;
+
+  --color-background: #f7f7f5;
+  --color-background-soft: #ffffff;
+  --color-background-mute: #efefeb;
+  --color-border: var(--vt-c-divider);
+  --color-border-hover: var(--vt-c-divider-strong);
+  --color-heading: var(--vt-c-ink);
+  --color-text: var(--vt-c-muted);
+  --color-muted: rgba(18, 28, 44, 0.62);
+  --color-accent: var(--vt-c-accent);
+  --font-display: "Georgia", "Times New Roman", serif;
+  --font-body: "Segoe UI", "Aptos", "Trebuchet MS", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  color: var(--color-text);
+  background: var(--color-background);
+  line-height: 1.6;
+  font-family: var(--font-body);
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}

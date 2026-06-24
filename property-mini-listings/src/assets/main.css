@@ -1,0 +1,25 @@
+@import "./base.css";
+
+#app {
+  min-height: 100vh;
+}
+
+::selection {
+  background: rgba(90, 114, 255, 0.2);
+}
+
+button,
+input,
+select {
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+button:hover,
+select:hover,
+input:hover {
+  border-color: var(--color-border-hover);
+}
